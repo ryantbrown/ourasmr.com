@@ -1,0 +1,45 @@
+#contact {
+  background: rgba(0,0,0,0.5);
+}
+
+.list-contacts {
+  list-style: none;
+  padding-left: 0;
+  margin: 2em 0;
+}
+
+.list-contacts li {
+  margin-bottom: 10px;
+  display: table;
+}
+
+.list-contacts [class*="fa-"] {
+  margin-right: 15px;
+  display: table-cell;
+  width: 30px;
+}
+
+#contactForm .form-control[name="name"] {
+  margin-bottom: 14px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .list-contacts {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 2em;
+  }
+
+  #contactForm .form-control[name="name"] {
+    margin-bottom: 0;
+  }
+}
+
+
+#contact.section.access-section.page-section .form-group input,
+#contact.section.access-section.page-section .form-group textarea
+{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

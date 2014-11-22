@@ -1,0 +1,11 @@
+/.idea
+/vendor
+/node_modules
+node_modules
+.env
+.DS_Store
+Thumbs.db
+composer.phar
+**/node_modules
+resources/**/public
+resources/**/build

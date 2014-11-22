@@ -1,0 +1,88 @@
+/* ---------------------------------------------------------
+ *	bxSlider
+ * --------------------------------------------------------- */
+.bx-wrapper {
+  margin: 0 auto 30px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  border-radius: 0;
+  height: 6px;
+  width: 20px;
+  margin: 5px 3px;
+  background: transparent;
+  border: 1px solid #eff0f0;
+}
+
+.bx-wrapper .bx-controls-direction a {
+  color: #bbbbbb;
+  margin-top: -35px;
+}
+
+.bx-wrapper .bx-pager {
+  bottom: -50px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager .active {
+  background: #eff0f0;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: #fff;
+}
+
+.bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-next:hover {
+  background: rgba(0, 0, 0, 0.61);
+  color: #fff;
+}
+
+.bx-wrapper .bx-prev,
+.bx-wrapper .bx-next {
+  background: rgba(0, 0, 0, 0.38);
+  padding: 4px 12px;
+  display: inline-block;
+  position: absolute;
+  top: 35%;
+  text-indent: 0 !important;
+  z-index: 1900 !important;
+}
+
+.bx-wrapper .bx-prev:before {
+  content: "\f104";
+  font-family: FontAwesome;
+}
+
+.bx-wrapper .bx-next:before {
+  content: "\f105";
+  font-family: FontAwesome;
+}
+
+.bx-wrapper .bx-viewport {
+  box-shadow: none;
+  border: 0;
+  background: none;
+  left: 0;
+}
+
+.section-solid .bx-wrapper .bx-pager.bx-default-pager a {
+  border-radius: 0;
+  height: 5px;
+  width: 20px;
+  margin: 5px 3px;
+  background: transparent;
+  border: 1px solid #686868;
+}
+
+.section-solid .bx-wrapper .bx-pager.bx-default-pager .active {
+  background: #686868;
+}
+
+/* Small devices (480px and up) */
+@media (min-width: 480px) {
+  .section-solid .bx-wrapper .bx-pager.bx-default-pager a,
+  .bx-wrapper .bx-pager.bx-default-pager a {
+    width: 25px;
+  }
+}
