@@ -30,10 +30,19 @@ $(function () {
 	 */
 
 	//if($('body').hasClass('home')) {
-		$.backstretch([
-			"/assets/img/background/home/1.jpg"
-		], {duration: 6000, fade: 750});
+	//	$.backstretch([
+	//		"/assets/img/background/home/1.jpg"
+	//	], {duration: 6000, fade: 750});
 	//}
+
+
+	// read more link
+	$('#popular').on("click", ".read-more-link", function(e){
+		e.preventDefault();
+		$(this).parent().find('div').toggleClass('hidden');
+		var lbl = $(this).parent().find('.hidden').length == 0 ? 'Show Less' : 'Show More';
+		$(this).html(lbl);
+	});
 
 	
 	
@@ -41,10 +50,10 @@ $(function () {
 	 *	WOW
 	 */
 	
-	new WOW({
-		mobile: false
-	}).init();
-	
+	//new WOW({
+	//	mobile: false
+	//}).init();
+	//
 	
 	/* ---------------------------------------------------------
 	 *	Knob
@@ -172,21 +181,21 @@ $(function () {
 		$grid.shuffle({
 			itemSelector: '.portfolio-item',
 			speed: 450
-		});	
-		
-		$('#filter a').click(function (e) {
-			e.preventDefault();
-		 
-			// set active class
-			$('#filter a').removeClass('active');
-			$(this).addClass('active');
-		 
-			// get group name from clicked item
-			var groupName = $(this).attr('data-group');
-		 
-			// reshuffle grid
-			$grid.shuffle('shuffle', groupName );
 		});
+
+		//$('#filter a').click(function (e) {
+		//	e.preventDefault();
+        //
+		//	// set active class
+		//	$('#filter a').removeClass('active');
+		//	$(this).addClass('active');
+        //
+		//	// get group name from clicked item
+		//	var groupName = $(this).attr('data-group');
+        //
+		//	// reshuffle grid
+		//	$grid.shuffle('shuffle', groupName );
+		//});
 	});
 	
 	/* ---------------------------------------------------------
@@ -197,16 +206,18 @@ $(function () {
 		nextButtonClass: 'fa fa-chevron-right',
 		prevButtonClass: 'fa fa-chevron-left',
 		closeButtonClass: 'fa fa-times',
-		dynamicHeight: true,
+		dynamicHeight: false,
+		initialWrapperHeight: 380,
+		animationSpeed: 200,
 		onShow: function(){
-			$("#portfolio-container").slideDown(300).fadeOut(300);
-			$(".filter-tags").slideDown(300).fadeOut(300);
-			$("#portfolio-more").slideDown(300).fadeOut(300);
+			$("#portfolio-container").fadeOut(150);
+			//$(".filter-tags").slideDown(300).fadeOut(300);
+			$(".portfolio-more").hide();
 		},
 		onHide: function(){
-			$("#portfolio-container").slideUp(300).fadeIn(300);
-			$(".filter-tags").slideUp(300).fadeIn(300);
-			$("#portfolio-more").slideUp(300).fadeIn(300);
+			$("#portfolio-container").fadeIn(150);
+			//$(".filter-tags").slideUp(300).fadeIn(300);
+			$(".portfolio-more").show();
 		}
 	});
 	

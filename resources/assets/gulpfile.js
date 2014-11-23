@@ -32,11 +32,11 @@ var scripts = [
     'vendor/jquery/jquery.bxslider.min.js',
     'vendor/waypoints/waypoints.min.js',
     'vendor/jquery/jquery.counterup.min.js',
-    'vendor/jquery/jQuery.GI.TheWall.min.js',
+    'vendor/jquery/jQuery.GI.TheWall.js',
     'vendor/twitter/twitterFetcher.min.js',
     'vendor/jquery/jquery.simple-text-rotator.min.js',
     'vendor/jquery/jquery.throttledresize.js',
-    'vendor/wow/wow.min.js',
+    //'vendor/wow/wow.min.js',
     'vendor/jquery/jquery.knob.min.js',
     'js/main.js'
 ];

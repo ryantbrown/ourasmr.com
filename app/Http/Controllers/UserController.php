@@ -1,8 +1,6 @@
 <?php namespace Asmr\Http\Controllers;
 
-
 use Asmr\Repositories\UserRepository;
-
 
 class UserController extends Controller {
 

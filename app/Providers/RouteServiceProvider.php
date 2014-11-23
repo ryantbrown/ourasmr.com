@@ -12,11 +12,14 @@ class RouteServiceProvider extends ServiceProvider {
 
 
 	protected $routes = [
+		'home',
 		'auth',
 		'password',
 		'page',
 		'user',
-		'discover'
+		'search',
+		'browse',
+		'artists'
 	];
 
 

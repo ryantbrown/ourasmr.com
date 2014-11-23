@@ -1,15 +1,12 @@
 <?php namespace Asmr\Models;
 
-
 use Asmr\Traits\BelongsToUser;
 
 class View extends Model {
 
     use BelongsToUser;
 
-
     public $timestamps = false;
-
 
 
     public function videos()

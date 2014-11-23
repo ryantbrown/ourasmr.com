@@ -8,6 +8,7 @@
   text-align: center;
 }
 
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .main {
@@ -21,6 +22,8 @@
   width: 100%;
   height: 100%;
   padding: 20px 0;
+  background-image: url(/assets/img/background/home/2.jpg);
+  background-size: cover;
 }
 
 .wrapper {
@@ -63,6 +66,7 @@
   font-weight: 700;
   margin: 30px 0 10px;
   line-height: 1.30208333em;
+  // text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
 }
 
 #signupForm .form-control-feedback {
@@ -73,147 +77,6 @@ lesshat-selector {
   -lh-property: 0;
 }
 
-@-webkit-keyframes arrowBounce {
-  0% {
-    -webkit--webkit-transform: translateY(-20px);
-    -moz--webkit-transform: translateY(-20px);
-    -ms--webkit-transform: translateY(-20px);
-    -webkit-transform: translateY(-20px)
-  }
-  50% {
-    -webkit--webkit-transform: translateY(-10px);
-    -moz--webkit-transform: translateY(-10px);
-    -ms--webkit-transform: translateY(-10px);
-    -webkit-transform: translateY(-10px)
-  }
-  100% {
-    -webkit--webkit-transform: translateY(-20px);
-    -moz--webkit-transform: translateY(-20px);
-    -ms--webkit-transform: translateY(-20px);
-    -webkit-transform: translateY(-20px)
-  }
-}
-
-@-moz-keyframes arrowBounce {
-  0% {
-    -webkit--moz-transform: translateY(-20px);
-    -moz--moz-transform: translateY(-20px);
-    -ms--moz-transform: translateY(-20px);
-    -moz-transform: translateY(-20px)
-  }
-  50% {
-    -webkit--moz-transform: translateY(-10px);
-    -moz--moz-transform: translateY(-10px);
-    -ms--moz-transform: translateY(-10px);
-    -moz-transform: translateY(-10px)
-  }
-  100% {
-    -webkit--moz-transform: translateY(-20px);
-    -moz--moz-transform: translateY(-20px);
-    -ms--moz-transform: translateY(-20px);
-    -moz-transform: translateY(-20px)
-  }
-}
-
-@-o-keyframes arrowBounce {
-  0% {
-    -webkit--o-transform: translateY(-20px);
-    -moz--o-transform: translateY(-20px);
-    -ms--o-transform: translateY(-20px);
-    -o-transform: translateY(-20px)
-  }
-  50% {
-    -webkit--o-transform: translateY(-10px);
-    -moz--o-transform: translateY(-10px);
-    -ms--o-transform: translateY(-10px);
-    -o-transform: translateY(-10px)
-  }
-  100% {
-    -webkit--o-transform: translateY(-20px);
-    -moz--o-transform: translateY(-20px);
-    -ms--o-transform: translateY(-20px);
-    -o-transform: translateY(-20px)
-  }
-}
-
-@keyframes arrowBounce {
-  0% {
-    -webkit--webkit-transform: translateY(-20px);
-    -webkit--moz-transform: translateY(-20px);
-    -webkit--ms-transform: translateY(-20px);
-    -webkit-transform: translateY(-20px);
-    -moz--webkit-transform: translateY(-20px);
-    -moz--moz-transform: translateY(-20px);
-    -moz--ms-transform: translateY(-20px);
-    -moz-transform: translateY(-20px);
-    -ms--webkit-transform: translateY(-20px);
-    -ms--moz-transform: translateY(-20px);
-    -ms--ms-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    -webkit-transform: translateY(-20px);
-    -moz-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
-  50% {
-    -webkit--webkit-transform: translateY(-10px);
-    -webkit--moz-transform: translateY(-10px);
-    -webkit--ms-transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    -moz--webkit-transform: translateY(-10px);
-    -moz--moz-transform: translateY(-10px);
-    -moz--ms-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -ms--webkit-transform: translateY(-10px);
-    -ms--moz-transform: translateY(-10px);
-    -ms--ms-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  100% {
-    -webkit--webkit-transform: translateY(-20px);
-    -webkit--moz-transform: translateY(-20px);
-    -webkit--ms-transform: translateY(-20px);
-    -webkit-transform: translateY(-20px);
-    -moz--webkit-transform: translateY(-20px);
-    -moz--moz-transform: translateY(-20px);
-    -moz--ms-transform: translateY(-20px);
-    -moz-transform: translateY(-20px);
-    -ms--webkit-transform: translateY(-20px);
-    -ms--moz-transform: translateY(-20px);
-    -ms--ms-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    -webkit-transform: translateY(-20px);
-    -moz-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
-
-}
-
-.arrow-down {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  bottom: 40px;
-  display: none;
-}
-
-.scroll {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  font-size: 35px;
-  padding: 10px;
-  color: #fff;
-  -webkit-animation: arrowBounce 2.5s infinite;
-  -moz-animation: arrowBounce 2.5s infinite;
-  -ms-animation: arrowBounce 2.5s infinite;
-  animation: arrowBounce 2.5s infinite;
-}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -254,6 +117,7 @@ lesshat-selector {
 p.sub-heading {
   font-size: 22px;
   margin-bottom: 40px;
+  // text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
 @media (max-width: 768px) {

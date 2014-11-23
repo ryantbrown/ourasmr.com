@@ -1,16 +1,10 @@
 <?php namespace Asmr\Http\Controllers;
 
-
 class PagesController extends Controller {
 
-    public function showHome()
+    public function showLearn()
     {
-        return view('sections.home.index');
-    }
-
-    public function showAbout()
-    {
-        return view('sections.about.index');
+        return view('sections.learn.index');
     }
 
     public function showHelp()
