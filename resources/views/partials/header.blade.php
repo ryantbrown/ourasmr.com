@@ -21,7 +21,7 @@
                     @if(Auth::guest())
                     <li><a href="{{ URL::route('login') }}">Log In</a></li>
                     <li><a href="{{ URL::route('register') }}">Join Now</a></li>
-                    <li><a href="#how">Learn More</a></li>
+                    <li><a href="{{ URL::route('learn') }}">Learn More</a></li>
                     @else
                     <li><a href="{{ URL::route('dashboard') }}">My Dashboard</a></li>
                     <li><a href="{{ URL::route('playlists') }}">My Playlists</a></li>
@@ -35,7 +35,6 @@
             <li class="open">
              <span class="dropdown-toggle">More</span>
                 <ul class="dropdown-menu navmenu-nav">
-                    <li><a href="{{ URL::route('about') }}">About</a></li>
                     <li><a href="{{ URL::route('contact') }}">Contact</a></li>
                     <li><a href="{{ URL::route('help') }}">Help</a></li>
                 </ul>

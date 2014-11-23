@@ -1,4 +1,4 @@
-<section id="featured" class="section section-solid">
+<section id="featured" class="section section-solid-white">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
@@ -8,10 +8,10 @@
 		</div>
 
 		<div class="row mt20">
-			<div class="col-sm-4 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">
+			<div class="col-sm-4">
 				<img src="{{ ASSETS }}img/about/1.jpg" class="img-responsive about-img" />
 			</div>
-			<div class="col-sm-8 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">
+			<div class="col-sm-8">
 				<p class="lead">
 					Maria - GentleWhispering
 				</p>

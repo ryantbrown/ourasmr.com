@@ -7,7 +7,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-6 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">
+			<div class="col-sm-6">
 				<div class="feature-box-container">
 					<div class="feature-box">
 						<div class="icon">
@@ -33,7 +33,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-6 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">
+			<div class="col-sm-6">
 							<div class="feature-box-container">
             					<div class="feature-box">
             						<div class="icon">

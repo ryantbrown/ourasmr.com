@@ -1,6 +1,6 @@
 <section id="facts" class="section">
 	<div class="container">
-		<div class="row text-center wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s">
+		<div class="row text-center">
 			<div class="col-sm-3">
 				<h1 class="counter">32</h1>
 				<p>asmr artists</p>
