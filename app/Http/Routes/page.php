@@ -7,14 +7,9 @@ $this->app['router']->group([
 
 ], function($router){
 
-    $router->get('/', [
-        'as' => 'home',
-        'uses' => 'PagesController@showHome'
-    ]);
-
-    $router->get('about', [
-        'as' => 'about',
-        'uses' => 'PagesController@showAbout'
+    $router->get('learn', [
+        'as' => 'learn',
+        'uses' => 'PagesController@showLearn'
     ]);
 
     $router->get('help', [
