@@ -17,3 +17,14 @@ if (!function_exists('format_uri'))
         return empty($uri) ? 'home' : $uri;
     }
 }
+
+
+if (!function_exists('format_date'))
+{
+    function format_date($date)
+    {
+        $parts = explode('-', explode('T', $date)[0]);
+
+        return \Carbon\Carbon::create($parts[0], $parts[1], $parts[2])->diffForHumans();
+    }
+}
