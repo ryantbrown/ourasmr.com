@@ -1,7 +1,8 @@
-<?php namespace Asmr\Http\Requests;
+<?php namespace Asmr\Http\Requests\Auth;
 
+use Asmr\Http\Requests\Request;
 
-class RegisterRequest extends Request {
+class LoginRequest extends Request {
 
 	/**
 	 * Get the validation rules that apply to the request.
@@ -11,8 +12,8 @@ class RegisterRequest extends Request {
 	public function rules()
 	{
 		return [
-			'email' => 'required|email|unique:users',
-			'password' => 'required|min:8',
+			'email' => 'required',
+			'password' => 'required',
 		];
 	}
 
