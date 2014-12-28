@@ -1,10 +1,11 @@
 <?php namespace Asmr\Http\Controllers;
 
-use Asmr\Http\Requests\LoginRequest;
-use Asmr\Http\Requests\RegisterRequest;
+use Asmr\Http\Requests\Auth\LoginRequest;
+use Asmr\Http\Requests\Auth\RegisterRequest;
 use Illuminate\Contracts\Auth\Guard as Auth;
 use Laravel\Socialite\Contracts\Factory as SocialiteFactory;
 use Asmr\Repositories\UserRepository;
+use \Hash;
 
 
 class AuthController extends Controller {
@@ -53,7 +54,10 @@ class AuthController extends Controller {
 
 	public function socialRedirect($driver)
 	{
-		if($this->auth->check()) return redirect()->route('dashboard');
+		if($this->auth->check())
+		{
+			return redirect()->route('dashboard');
+		}
 
 		return $this->socialite->driver($driver)->redirect();
 	}
@@ -67,7 +71,6 @@ class AuthController extends Controller {
 		$this->auth->login($user);
 
 		return redirect()->route('dashboard');
-
 	}
 
 	public function doLogout()
@@ -76,5 +79,4 @@ class AuthController extends Controller {
 
 		return redirect()->route('home');
 	}
-
 }
