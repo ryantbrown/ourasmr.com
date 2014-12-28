@@ -1,9 +1,7 @@
 <?php namespace Asmr\Models;
 
-use Asmr\Traits\Metable;
-use Asmr\Traits\Searchable;
-use Asmr\Traits\Taggable;
-use Illuminate\Auth\Authenticatable;
+use Asmr\Traits\Metable, Asmr\Traits\Searchable, Asmr\Traits\Taggable;
+use Illuminate\Auth\Authenticatable, Hash;
 use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\Authenticatable as Auth;
 use Illuminate\Contracts\Auth\CanResetPassword as ResetPassword;
