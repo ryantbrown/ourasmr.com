@@ -10,9 +10,7 @@ class Youtube {
 
     public function __construct(Config $config)
     {
-        $this->api = new YoutubeApi([
-            'key' => $config->get('services.youtube.key')
-        ]);
+        $this->api = new YoutubeApi(['key' => $config->get('services.youtube.key')]);
     }
 
     public function search($query, $max = 10)
