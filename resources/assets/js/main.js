@@ -346,4 +346,18 @@ $(function () {
 			});
 		}
 	});
+
+
+	$('.toggle-panel').on("click", function(){
+		$(this).closest('.panel').find('.panel-body').slideToggle(150);
+
+		if($(this).hasClass('up')) {
+			$(this).find('i.fa').removeClass('fa-caret-square-o-down').addClass('fa-caret-square-o-up');
+			$(this).removeClass('up');
+		} else {
+			$(this).find('i.fa').removeClass('fa-caret-square-o-up').addClass('fa-caret-square-o-down');
+			$(this).addClass('up');
+		}
+
+	});
 });

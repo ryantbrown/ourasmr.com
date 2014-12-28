@@ -21,13 +21,10 @@
                     @if(Auth::guest())
                     <li><a href="{{ URL::route('login') }}">Log In</a></li>
                     <li><a href="{{ URL::route('register') }}">Join Now</a></li>
-                    <li><a href="{{ URL::route('learn') }}">Learn More</a></li>
                     @else
                     <li><a href="{{ URL::route('dashboard') }}">My Dashboard</a></li>
-                    <li><a href="{{ URL::route('playlists') }}">My Playlists</a></li>
-
-                    <li><a href="{{ URL::route('logout') }}">Logout</a></li>
                     @endif
+                    <li><a href="{{ URL::route('learn') }}">Learn More</a></li>
 
 
                 </ul>
@@ -37,6 +34,9 @@
                 <ul class="dropdown-menu navmenu-nav">
                     <li><a href="{{ URL::route('contact') }}">Contact</a></li>
                     <li><a href="{{ URL::route('help') }}">Help</a></li>
+                    @if(!Auth::guest())
+                        <li><a href="{{ URL::route('logout') }}">Logout</a></li>
+                    @endif
                 </ul>
             </li>
         </ul>

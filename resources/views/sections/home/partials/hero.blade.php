@@ -9,9 +9,9 @@
 					&nbsp;&nbsp;&nbsp;
 					<a class="btn btn-default" href="{{ URL::route('learn') }}">Learn More</a>
 				@else
-					<a class="btn btn-primary" href="{{ URL::route('playlists') }}">My Playlists</a>
+					<a class="btn btn-primary" href="{{ URL::route('dashboard') }}">My Library</a>
 					&nbsp;&nbsp;&nbsp;
-					<a class="btn btn-default" href="{{ URL::route('discover') }}">Discover Now</a>
+					<a class="btn btn-default" href="{{ URL::route('browse') }}">Discover Now</a>
 				@endif
 			</div>
 		</div>

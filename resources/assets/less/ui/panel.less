@@ -10,3 +10,51 @@
 .panel-title {
   font-size: 14px;
 }
+
+
+.panel-heading {
+  padding: 6px 12px;
+  font-size: 13px;
+  text-transform: uppercase;
+  i.fa {
+    &:after {
+      content: "\00a0\00a0";
+    }
+  }
+  a.toggle-panel {
+    float: right;
+    color: #787878;
+    &:hover {
+      color: #444;
+    }
+    i.fa {
+      &:after {
+        content: "";
+      }
+    }
+  }
+}
+
+.panel-body {
+  padding: 0;
+  a {
+    display: block;
+    font-size: 13px;
+    margin: 6px 0;
+    padding: 6px 12px;
+    border-bottom: 1px solid #eee;
+    &:last-child {
+      border-bottom: 0;
+    }
+    &:hover {
+      color: #444;
+    }
+    &.active {
+      color: #428bca;
+      font-weight: bold;
+      cursor: default;
+    }
+  }
+
+
+}
